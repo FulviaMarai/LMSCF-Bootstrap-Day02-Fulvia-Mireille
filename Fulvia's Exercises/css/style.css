@@ -1,0 +1,95 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#container {
+  margin-left: 0;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.jumbotron {
+  padding: 20px;
+  background-image: linear-gradient(yellow, red);
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(yellow, red);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar ul li a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: darkgrey;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color:white;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.mascotte {
+  max-width: 60%;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: red;
+}
+
+.navbar-collapse {
+
+  width: 200px;
+}
+
+ a.dropdown-item:hover {background-color: orange;}
+
+.dropdown:hover .dropdown {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+h3 {
+  color: red;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.portrait {
+  max-width: 200px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
